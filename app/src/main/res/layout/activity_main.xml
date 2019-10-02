@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DC4CAF50"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:maxLines="1"
+        android:hint="User Name"
+        android:id="@+id/etUserName"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    </EditText>
+    <TextView
+        android:id="@+id/tvMessErrorUser"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/etUserName"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:maxLines="2"
+        android:hint="Pass Word"
+        android:id="@+id/etPass"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:textColor="#fff"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMessErrorUser">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvMessErrorPass"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/etPass"
+        android:layout_height="wrap_content"></TextView>
+
+    <Button
+        android:id="@+id/btLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMessErrorPass"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Log In"
+        android:textColor="#fff"
+        android:textSize="25dp">
+
+    </Button>
+
+</RelativeLayout>
